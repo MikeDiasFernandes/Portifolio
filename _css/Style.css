@@ -91,7 +91,6 @@ span {
     position: relative;
     height: 100vh;
     width: 100%;
-
     background-size: cover;
     background-position: center;
     display: flex;
@@ -865,3 +864,24 @@ form textarea {
     transition: 0.3s;
 }
 
+@media screen and(max-width: 1120px){
+
+
+  /* home */
+  #home .home-text {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .slide {
+    order: 1;
+  }
+
+  #home .um, #home .dois {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+
+}
