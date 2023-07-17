@@ -21,11 +21,11 @@
 }
 
 section {
-    padding: 160px 15% 120px;
+    padding: 180px 15% 120px;
 }
 
 body {
-    background-image: linear-gradient(to right bottom, #050737, #131b56, #262c77, #3a3f9a, #4e52be);
+    /*background-image: radial-gradient(#f9d349, 20%, #d57e12);*/ 
     color: var(--text-color);
 }
 
@@ -91,12 +91,12 @@ span {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(/_img/background.jp);
+
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 
 
 
@@ -173,102 +173,9 @@ span {
 }
 
 
-.btn:hover {
-    /* efeito de diminuir o primeiro botão */
-    transform: scale(0.9);
-}
-
-.btn2 {
-    /*customização do segundo botão*/
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--text-color);
-    margin-left: 35px;
-    ;
-}
-
-.btn2 span i {
-    height: 55px;
-    width: 55px;
-    background: var(--main-color);
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 35px;
-    border-radius: 50%;
-    margin-right: 15px;
-    transition: all .45s ease;
-}
-
-.btn2 span i:hover {
-    transform: scale(0.9);
-}
-
-header.sticky {
-    background: var(--bg-color);
-    border-bottom: 1px solid #ffffff1a;
-    padding: 12px 15%;
-}
 
 
 
-.about-img {
-    margin-left: 250px;
-}
-
-.about-img img {
-    max-width: 530px;
-    height: auto;
-    width: 100%;
-    border-radius: 10px;
-    animation: floatImage 4s ease-in-out infinite;
-}
-
-
-
-@keyframes floatImage {
-    0% {
-        transform: translateY(0)
-    }
-
-    50% {
-        transform: translateY(-2.4rem)
-    }
-
-    100% {
-        transform: translateY(0)
-    }
-}
-
-
-
-
-
-
-
-.about-text h2 {
-    font-size: var(--h2-font);
-    line-height: 1;
-}
-
-.about-text h4 {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--text-color);
-    line-height: 1.7;
-    margin: 15px 0 30px;
-}
-
-.about-text p {
-    color: var(--second-color);
-    font-size: var(--p-font);
-    line-height: 1.8;
-    margin-bottom: 4rem;
-}
 
 
 
@@ -300,14 +207,14 @@ header.sticky {
 
 
 .box {
-    background: #5c5858;
+    background: transparent;
     padding: 35px 45px;
     border-radius: 5%;
-    box-shadow:
+    /* box-shadow:
         -28px 27px 37.5px rgba(0, 0, 0, 0.53),
         10px -19px 80.5px rgb(57, 74, 226),
         inset 4px -4px 8px rgb(0, 0, 0, 0.53),
-        inset -5px 5px 12px #fff;
+        inset -5px 5px 12px #fff; */
 }
 
 
@@ -693,7 +600,7 @@ form textarea {
 
 
 
-/*========================CARD COM FOTO DO HOME ============================== */
+/*========================CARD COM FOTO DO ABOUT ============================== */
 
 
 
@@ -715,11 +622,9 @@ form textarea {
     cursor: pointer;
     height: 100%;
     background-image: url(Cartoon.png);
-    backface-visibility: hidden;
     border-radius: 50px;
     background-size: cover;
     background-position: center center;
-    position: absolute;
 }
 
 
@@ -732,161 +637,167 @@ form textarea {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container{
-    position: relative;
-    background: #ffffff;
-    width: 400px;
-    padding: 40px 40px 0 40px;
-    border-radius: 20px;
-    box-shadow:
-    -28px 27px 37.5px rgba(0, 0, 0, 0.53),
-    10px -19px 80.5px rgba(7, 19, 128, 0.514),
-    inset 4px -4px 8px rgb(0, 0, 0, 0.53),
-    inset -5px 5px 12px #f0eaea;
-    z-index: 5;
-    transition: 0.3s;
-    transform: perspective(500px);
-    transform-style: preserve-3d;
-    margin: 0 20px;
+.about-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
 }
 
-.container:hover{
-    padding-bottom: 40px;
-}
-
-.imgbox{
-    position: relative;
-    width: 100%;
-    height: 300px;
-    z-index: 1;
-    transform: translateZ(40px);
-
-}
-
-.eu{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    transform: scale(0.7) ;
-    transition: 0.3s ease-in;
-    object-fit: cover;
-    border-radius: 20px;
-    bottom: 45px;
-}
-
-
-
-.container:hover .object{
-    width: 0px;
-    height: 0px;
-}
-
-.container:hover .imgbox .eu{
-    transform: scale(0.7);
-}
-
-.bgtext{
-    position: absolute;
-    font-size: 8em;
-    font-weight: 800;
-    top: 50%;
-    -webkit-text-stroke: 1px #000000;
-    opacity: 0.4;
-    color: transparent;
-    z-index: -1;
-}
-
-.title{
-    font-size: 1.4em;
+.about-text h4 {
+    font-size: 24px;
     font-weight: 600;
-    text-align: center;
-    color: #000000;
-    word-spacing: 2px;
-    transition: 0.3s ease;
-    transform: translateZ(50px);
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
 }
 
-.container:hover .title{
-    font-size: 1.8em;
-    font-weight: 800;
+.about-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 4rem;
 }
 
-.buySection{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    position: relative;
+    width: 380px;
+    height: 340px;
+    border-radius: 20px;
     display: flex;
-    justify-content: space-between;
-    margin-top: 0;
-    overflow: hidden;
-    transform: all 0.3s;
-    transform: translateZ(50px);
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5S;
 }
 
-
-.buySection h2{
-    font-size: 1.6em;
-    color: #000000;
-    transition: 0.3s;
-    transform: translateY(100px);
-    margin-left: 19px;
+.card:hover{
+    width: 600px;
+    transition-delay: 0.5s;
+    z-index: 2;
 }
 
-.buySection sup{
-    font-size: 0.8em;
-    font-weight: 300;
+.card .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.buySection span{
-    font-size: 0.8em;
-    font-weight: 600;
+.card .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    background: #191919;
+    border: 8px solid var(--clr);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
 }
 
-.buySection button{
-    padding: 15px 30px;
-    border-radius: 50px;
-    border: none;
-    font-size: 1em;
-    font-weight: 400;
-    cursor: pointer;
+.card:hover .circle::before{
+    transition-delay: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+}
+
+.card .circle .logo{
+    position: relative;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card:hover .circle .logo{
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.card .product_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(400deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover .product_img {
+    top: 45%;
+    left: 400px;
+    height: 350px;
+    transition: 0.5s ease-in-out;
+    transform: translate(-44%, -50%) scale(0.9) rotate(-360deg);
+}
+
+.card .content{
+    position: absolute;
+    width: 50%;
+    left: 0%;
+    padding: 10px 10px 10px 10px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card:hover .content{
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 20px;
+    
+}
+
+.card .content h2{
     color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card .content p{
+    color: #fff;
+}
+
+.card .content a{
+    position: relative;
+    color: #111;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.card .content a:hover{
+    transform: scale(0.9);
     transition: 0.3s;
-    transform: translateY(100px);
 }
-
-.buySection button a{
-   color: #fff;
-}
-
-.container:hover .buySection{
-    margin-top: 30px;
-}
-
-.container:hover .buySection h2{
-    transition-delay: 0.2s;
-    transform: translateY(0);
-
-}
-
-.container:hover .buySection button{
-    transition-delay: 0.4s;
-    transform: translateY(0);
-}
-
-.bluebtn{
-    background: var(--main-color);
-}
-
-
-
 
