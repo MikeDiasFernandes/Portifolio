@@ -50,17 +50,6 @@ ScrollReveal().reveal('.services-content, .container', { origin: 'bottom' });
 
 
 
-const typed = new Typed('.multiple-text',{
-    
-    strings: ['Front End Developer.', 'UX | Designer.'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
-
-
-
 
 
 
