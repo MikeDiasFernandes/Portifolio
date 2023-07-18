@@ -129,7 +129,7 @@ span {
 
 
 .home-text h1 {
-    font-size: var(--big-font);
+    font-size: 100px;
     font-weight: 700;
     color: var(--text-color);
     list-style: 1.1;
@@ -139,7 +139,7 @@ span {
 .home-text h3 {
     color: var(--text-color);
     margin: 0 0 35px;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 700;
     line-height: 1.1;
 }
@@ -189,8 +189,8 @@ span {
 }
 
 .main-text h2 {
-    font-size: var(--h2-font);
-    line-height: 1;
+    font-size: 30px;
+    line-height: 5;
 }
 
 .services-content {
@@ -789,6 +789,7 @@ form textarea {
 .card:hover .circle .logo{
     transform: scale(0);
     transition-delay: 0s;
+    
 }
 
 .card .product_img{
@@ -806,6 +807,7 @@ form textarea {
     height: 350px;
     transition: 0.5s ease-in-out;
     transform: translate(-44%, -50%) scale(0.9) rotate(-360deg);
+    
 }
 
 .card .content{
@@ -816,6 +818,7 @@ form textarea {
     opacity: 0;
     transition: 0.5s;
     visibility: hidden;
+    
 }
 
 .card:hover .content{
@@ -823,6 +826,7 @@ form textarea {
     opacity: 1;
     visibility: visible;
     left: 20px;
+    
     
 }
 
@@ -850,6 +854,7 @@ form textarea {
     font-size: 10px;
     margin-top: 10px;
     transition: 1.2s;
+    
 }
 
 .card .content a:hover{
