@@ -96,9 +96,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-
+    
 }
 
 
@@ -128,12 +126,53 @@ span {
 
 
 
+
+
+
+
+
+
+
+
+/* INICIO EFEITO VIDRO HOME */
+
+
+.vidro{
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.100);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    
+}
+
+
+
+/* FIM EFEITO VIDRO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .home-text h1 {
     font-size: 100px;
     font-weight: 700;
     color: var(--text-color);
     list-style: 1.1;
     margin: 0 0 8px;
+
+    
+    
 }
 
 .home-text h3 {
